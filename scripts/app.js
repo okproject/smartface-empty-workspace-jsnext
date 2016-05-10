@@ -8,8 +8,10 @@ Application.onUnhandledError = Application_OnError;
  * @this Application
  */
 function Application_OnStart(e) {
-	include("pages/index.js");
-	Pages.page1.show();
+	// include("pages/index.js");
+	include('vendor/Smartface/SMFAjax.js');
+	include("pages/rest-example.js");
+	// Pages.page1.show();
 }
 
 function Application_OnError(e) {
