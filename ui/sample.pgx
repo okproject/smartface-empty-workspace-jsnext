@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page xmlns:xsi="http://xml.smartface.io/schema/5/UI" xsi:noNamespaceSchemaLocation="http://xml.smartface.io/schema/5/UI/schema.xsd" name="page1">
+	<Label text="Title" top="" />
+	<Container>
+		<Label text="Item 1" />
+		<TextButton name="tb1" text="Action 1" onPressed="tb1_pressed" />
+	</Container>
+	<RepeatBox name="rb1" top="10%" left="10dp" height="300px" width="600">
+		<itemTemplate>
+			<Label name="lblItem" />
+		</itemTemplate>
+		<activeItemTemplate>
+			<Label name="lblActiveItem" />
+		</activeItemTemplate>
+	</RepeatBox>
+</Page>
